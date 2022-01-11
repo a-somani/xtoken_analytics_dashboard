@@ -50,12 +50,16 @@ export const ExchangeBox = styled.div`
     stroke-dasharray: calc(var(--size) * 2.55);
     stroke-dashoffset: calc(var(--size) * 2.55);
     animation: circle 2s linear 2s forwards;
-    --percent: ${({ circlePercent }) => `${circlePercent}`};
+    --percent: ${({ circlePercent }) =>
+      circlePercent > 0 && `${circlePercent}`};
+
     @keyframes circle {
       100% {
         stroke-dashoffset: calc(var(--size) * 2.55 * var(--percent));
       }
     }
+
+    //visibility: ${({ circlePercent }) => circlePercent < 0 && `hidden`};
   }
 
   @media screen and (min-width: 768px) {

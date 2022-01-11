@@ -36,7 +36,7 @@ export const Title = styled.div`
     color: ${({ em }) => em === "CoinGecko" && "#8BC53F"};
     font-weight: ${({ em }) => em === "CoinGecko" && "700"};
     @media screen and (min-width: 700px) {
-      font-size: ${({ em }) => em === "CoinGecko" && "18px"};
+      font-size: ${({ em }) => em === "CoinGecko" && "16px"};
     }
     //color: #60d0fd;
     top: -8px;

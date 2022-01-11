@@ -26,6 +26,13 @@ export const SupplyBox = styled.div`
     font-weight: 600;
     font-size: 20px;
     margin-bottom: -28px;
+    //margin-bottom: -28px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 28px;
+      width: 150px;
+      height: 50px;
+    }
     em {
       color: #60d0fd;
       text-decoration: none;
@@ -64,11 +71,10 @@ export const SupplyBox = styled.div`
   @media screen and (min-width: 768px) {
     --size: 220px;
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1000px) {
     --size: 250px;
     h4 {
-      font-size: 24px;
-      margin-bottom: -32px;
+      font-size: 22px;
     }
   }
 `
@@ -82,7 +88,7 @@ export const SupplyMessage = styled.p`
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1000px) {
     font-size: 22px;
   }
 `

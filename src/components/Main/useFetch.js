@@ -25,7 +25,7 @@ export const useFetch = () => {
   const [xtkPrice, setXtkPrice] = useState(0)
   const [tradingVolume, setTradingVolume] = useState(0)
   const [exchangeData, setExchangeData] = useState([])
-
+  let caughtError = false
   const formatNumber = (raw) => {
     return raw.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1, ")
   }
@@ -112,6 +112,14 @@ export const useFetch = () => {
                 setXtkPrice(avgPrice)
                 setTradingVolume(totalVolume)
                 setExchangeData(priceData)
+              }
+            })
+            .catch((error) => {
+              if (!caughtError) {
+                window.alert(
+                  "If you have an AD BLOCKER enabled, PLEASE DISABLE it and refresh (Ad blocker prevents data fetching)"
+                )
+                caughtError = true
               }
             })
       )

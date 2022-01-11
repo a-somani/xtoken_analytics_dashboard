@@ -19,7 +19,7 @@ const MainSupply = ({ loading, CSupply, SSupply, ASupply }) => {
           <SupplyBox
             circlePercent={1 - Math.round((SSupply * 100) / CSupply) / 100}
           >
-            <h4>Staked Supply</h4>
+            <h4>Staked Supply (xXTKa)</h4>
             <svg height="100%" width="100%">
               <circle cx="50%" cy="50%" r="40%" strokeWidth="8%" fill="none" />
               <circle cx="50%" cy="50%" r="40%" strokeWidth="8%" fill="none" />

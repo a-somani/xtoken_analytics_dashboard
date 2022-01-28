@@ -1,3 +1,16 @@
+# Message from maan-eth
+
+### View this project live at: https://xtoken-analytics.netlify.app/
+
+This project is a website that tracks on-chain metrics related to the xToken DeFi Protocol, with the chains being Arbitrum and Ethereum Mainnets. Data is fetched with Arbiscan, Etherscan, and CoinGecko APIs.
+
+The project was submitted for a bounty from xToken facilitated through Layer3. It was successfully awarded the bounty! https://alpha.layer3.xyz/task/create-dashboard-xtoken-on-arbitrum, https://twitter.com/layer3xyz/status/1485604578640883716?s=20&t=Uk-tPcpikDAbeCYr36KHPQ, https://twitter.com/xtokenmarket/status/1484931290122043393?s=20&t=SAN8D60d72Vz8c5CbGwZqw
+
+This was made from scratch by myself.
+<br/>
+<br/>
+<br/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
